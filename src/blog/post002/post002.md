@@ -9,11 +9,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor lacus non ni
 
 ![Kitty Kitty 002](post002-image.jpeg "Kitty You!")
 
-***
-<!-- 
-![Kitty Kitty 002](post002-image002.jpeg "Kitty You!")
-
-![Kitty Kitty 002](post002-image003.jpeg "Kitty You!") -->
-
 
 Sed volutpat mauris ut mauris tempus tristique. Mauris finibus posuere vestibulum. Proin vel diam eget odio facilisis faucibus non a arcu. Phasellus mattis vehicula dapibus. In molestie lorem justo, non placerat felis elementum id. Sed varius faucibus ex, eu aliquam metus lobortis quis. Nullam in ullamcorper risus. Nullam velit urna, elementum ac semper ac, ullamcorper et ante. Pellentesque tempus lectus vel arcu fringilla, a ultricies justo efficitur. Ut sed felis eu sapien luctus auctor. Etiam facilisis diam at lectus iaculis tempus. Etiam molestie euismod tristique. Etiam ullamcorper libero orci, quis placerat libero varius at. Duis sit amet sem at est rhoncus semper sed a urna. Vestibulum nunc dolor, commodo a bibendum et, bibendum vitae lacus. Nam dignissim finibus tristique.
