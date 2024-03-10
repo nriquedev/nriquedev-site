@@ -4,12 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve --formats=html,md,jpg,jpeg,png,css"
+    "ep-build:sass": "sass src/assets/sass:src/assets/css --style=compressed",
+    "ep-watch:sass": "sass src/assets/sass:src/assets/css --style=compressed",
+    "ep-build:eleventy": "npx eleventy --formats=html,md,jpg,jpeg,png,css",
+    "ep-watch:eleventy": "eleventy --serve --formats=html,md,jpg,jpeg,png,css",
+    "ep-build-all": "npm run ep-build:sass && npm run ep-build:eleventy",
+    "start": "npm-run-all ep-build:sass ep-watch:sass ep-build:eleventy ep-watch:eleventy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.71.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
   }
 }
