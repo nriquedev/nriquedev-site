@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
     {% include 'partials/title-styles-and-meta.njk' %}
-    
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container ep-greenbox">
-      {% include 'partials/header.njk' %}
-      {% include 'partials/navigation.njk' %}
-      {{ content | safe }}
-    </div>
-</body>
+
+      <div>
+        {% include 'partials/header.njk' %}
+      </div>
+
+      <div class="row align-items-start">
+
+        {# Navigation #}
+        <div class="ep-navigation
+                    col order-last
+                    order-md-first
+                    col-md-2
+                    col-lg-3
+                    ep-sticky-bottom-mobile
+                    ep-nav-mt
+                    ">
+          {% include 'partials/navigation.njk' %}
+        </div>
+
+        {# Content #}
+        <div class="ep-content
+                    col-12 
+                    col-md-10 
+                    col-lg-9
+                    ">
+          <h2 >{{ title | safe }}</h2>
+          <hr class="mt-0">
+          {{ content | safe }}
+        </div>
+        
+      </div> {# end row #}
+    </div> {# end container #}
+  </body>
 </html>

@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css"  href="/assets/css/ep-styles.css"> 
 <title>Home</title>
 
 
-    
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container ep-greenbox">
+
       <div>
-    <img src="/assets/images/kitty-200x200.jpeg" alt="Header Image">
+        <div>
+    <div class="text-end">
+      <img class="img-thumbnail" 
+           src="/assets/images/profile-pic-250x250.png" 
+           alt="Header Image">
+    </div>
     <h1 class="mb-0">Demo Template</h1>
     <hr>
     <p>Lorem ipsum dolor sit amet...</p>
 </div>
 
-      <nav class="nav 
+      </div>
+
+      <div class="row align-items-start">
+
+        
+        <div class="ep-navigation
+                    col order-last
+                    order-md-first
+                    col-md-2
+                    col-lg-3
+                    ep-sticky-bottom-mobile
+                    ep-nav-mt
+                    ">
+          <nav class="nav 
             flex-md-column
             border-end
             border-2
@@ -49,7 +66,20 @@
             aria-current="page" 
             href="/about/">About</a></nav>
 
-      <a href="/blog/post002/">This is the post 002</a></br><a href="/blog/post003/">This is the post 003</a></br><a href="/blog/post001/">This is the post 001</a></br>
-    </div>
-</body>
+        </div>
+
+        
+        <div class="ep-content
+                    col-12 
+                    col-md-10 
+                    col-lg-9
+                    ">
+          <h2 >Home</h2>
+          <hr class="mt-0">
+          <a href="/blog/post002/">This is the post 002</a></br><a href="/blog/post003/">This is the post 003</a></br><a href="/blog/post001/">This is the post 001</a></br>
+        </div>
+        
+      </div> 
+    </div> 
+  </body>
 </html>
