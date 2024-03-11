@@ -1,11 +1,38 @@
+{# <nav class="nav 
+            flex-md-column
+            ">
+    {%- for sitepage in collections.pages -%}
+        <a class="  nav-link 
+                    link-secondary 
+                    active
+                    " 
+            aria-current="page" 
+            href="{{ sitepage.url }}">{{ sitepage.data.title }}</a>
+    {%- endfor -%}
+</nav> #}
+
+
 <nav class="nav 
             flex-md-column
             ">
     {%- for sitepage in collections.pages -%}
         <a class="  nav-link 
                     link-secondary 
+                    {% if  (page.url | lower | slug == "") and (sitepage.data.title | lower == "home") %}ep-active{% endif %}    
+                    {% if  page.url | lower | slug == sitepage.data.title | lower %}ep-active{% endif %}
                     " 
-            aria-current="page" 
-            href="{{ sitepage.url }}">{{ sitepage.data.title }}</a>
+
+            href="{{ sitepage.url }}"> 
+            
+
+                
+                {{ sitepage.data.title }}
+                
+                
+
+                
+                </a>
+
+
     {%- endfor -%}
 </nav>

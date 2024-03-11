@@ -6,8 +6,8 @@
   "scripts": {
     "ep-build:sass": "sass src/assets/sass:src/assets/css --style=compressed",
     "ep-watch:sass": "sass src/assets/sass:src/assets/css --style=compressed",
-    "ep-build:eleventy": "npx eleventy --formats=html,md,jpg,jpeg,png,css",
-    "ep-watch:eleventy": "eleventy --serve --formats=html,md,jpg,jpeg,png,css",
+    "ep-build:eleventy": "npx eleventy --formats=html,md,jpg,jpeg,png,css,js",
+    "ep-watch:eleventy": "eleventy --serve --formats=html,md,jpg,jpeg,png,css,js",
     "ep-build-all": "npm run ep-build:sass && npm run ep-build:eleventy",
     "start": "npm-run-all ep-build:sass ep-watch:sass ep-build:eleventy ep-watch:eleventy"
   },
