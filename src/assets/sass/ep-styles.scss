@@ -45,6 +45,17 @@
     border: 1px solid red;
 }
 
+/***************\
+Typography
+\***************/
+
+body{
+  color: #444444;
+  background-color: #f1f1f1;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+  
+
 
 /***************\
  * Layout
