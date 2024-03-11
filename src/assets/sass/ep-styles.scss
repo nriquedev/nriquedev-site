@@ -55,6 +55,11 @@ $nav-link-padding-y:  0rem;
   text-decoration: underline;
 }
 
+.ep-header-pattern-background {
+  background-image: url('/assets/images/header-pattern.webp'); /* Specify the path to your pattern image */
+  background-repeat: repeat; /* Repeat the pattern both vertically and horizontally */
+}
+
 
 
 /***************\
