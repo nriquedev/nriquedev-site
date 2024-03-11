@@ -9,7 +9,7 @@
 $nav-link-color: "#949494";
 $nav-link-hover-color: "#4C4C4C";
 $nav-link-padding-y:                0rem;
-//$nav-link-padding-x:                .25rem;
+
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../../../node_modules/bootstrap/scss/variables";
@@ -93,3 +93,17 @@ body{
     }
     
 }/* End sm */
+
+@media (max-width: 1199.98px) { /* lg */
+    /* margins */
+    .ep-nav-mt{
+      margin-top: 4em;
+    }
+}/* End lg */
+
+@media (min-width: 1200px) { /* xl */
+  /* margins */
+  .ep-nav-mt{
+    margin-top: 8em;
+  }
+}/*End xl*/
