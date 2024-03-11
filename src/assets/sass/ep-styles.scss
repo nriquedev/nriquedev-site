@@ -46,3 +46,37 @@
 }
 
 
+/***************\
+ * Layout
+\***************/
+
+@media (max-width: 767.98px) { /* sm */
+    /*
+    Keep nav bar fixed bottom when mobile.
+    */
+    .ep-sticky-bottom-mobile {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      border-top: 1px solid #949494;
+      background-color: #FCFCFC;
+      padding-top: 0.5em!important;
+      padding-bottom: 0.5em!important;
+    }
+    .sticky-left + .content {
+      margin-bottom: 100px; /* Adjust as needed */
+    }
+  
+    // /* margins */
+    // .ep-nav-mt{
+    //   margin-top: 2em;
+    // }
+  
+    // .ep-content-mt{
+    //   margin-top: 1em;
+    // }
+  
+    
+  }/* End sm */
