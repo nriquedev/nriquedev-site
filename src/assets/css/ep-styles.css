@@ -2178,7 +2178,7 @@ progress {
 
 .nav {
   --bs-nav-link-padding-x: 1rem;
-  --bs-nav-link-padding-y: 1rem;
+  --bs-nav-link-padding-y: 0rem;
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: #949494;
   --bs-nav-link-hover-color: #4C4C4C;
@@ -7086,7 +7086,7 @@ progress {
  * Custom styles  *
 \******************/
 .ep-greenbox {
-  border: 1px solid red;
+  border: 1px solid green;
 }
 
 .ep-redbox {

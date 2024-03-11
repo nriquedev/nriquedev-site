@@ -9,6 +9,9 @@ module.exports = eleventyConfig => {
         ]
     });
 
+    //Multiple config files
+    eleventyConfig.addPlugin(require('./config/custom-markdown-rules.js'));
+
     return {
         dir: {
             input: 'src',
