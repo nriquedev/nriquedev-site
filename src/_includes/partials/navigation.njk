@@ -1,17 +1,16 @@
 <nav class="nav 
             flex-md-column
-            border-end
-            border-2
             
             ">
     {%- for sitepage in collections.pages -%}
         <a class="  nav-link 
-                    link-secondary 
-                    text-end
-                    link-opacity-25-hover
-                    
+                    {% if  (page.url | lower | slug == "") and (sitepage.data.title | lower == "home") %}ep-nav-item-active{% endif %}    
+                    {% if  page.url | lower | slug == sitepage.data.title | lower %}ep-nav-item-active{% endif %}
                     " 
-            aria-current="page" 
-            href="{{ sitepage.url }}">{{ sitepage.data.title }}</a>
+            href="{{ sitepage.url }}"> 
+              
+            {{ sitepage.data.title }}
+        
+        </a>
     {%- endfor -%}
 </nav>
