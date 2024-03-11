@@ -11,5 +11,8 @@ title: 'Blog'
                   link-opacity-75-hover
                   link-underline-opacity-25-hover
                  "
-          href="{{ post.url }}">{{ post.data.title }}</a></br> 
+          href="{{ post.url }}">{{ post.data.title }} 
+          <span class="fs-5">( {{ post.data.date | epDate }} ) </span>
+          
+        </a></br> 
   	{%- endfor -%}
