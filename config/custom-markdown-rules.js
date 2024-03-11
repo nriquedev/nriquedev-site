@@ -29,6 +29,7 @@ module.exports = eleventyConfig => {
                             mx-auto
                             d-block
                             img-thumbnail
+                            rounded-4
                             shadow
                             "
                     src="${src}" 
