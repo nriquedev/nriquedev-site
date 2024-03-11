@@ -8,7 +8,7 @@
 
 $nav-link-color: "#949494";
 $nav-link-hover-color: "#4C4C4C";
-$nav-link-padding-y:  5rem;
+$nav-link-padding-y:  1rem;
 
 
 // 3. Include remainder of required Bootstrap stylesheets
@@ -43,7 +43,7 @@ $nav-link-padding-y:  5rem;
 \******************/ 
 
 .ep-greenbox{
-    border: 1px solid green;
+    border: 1px solid red;
 }
 
 .ep-redbox{
