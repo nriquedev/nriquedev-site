@@ -5,6 +5,12 @@ node_modules/
 .env
 .env.test
 
+# Sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
 # Exclud _site folder
 _site
 
