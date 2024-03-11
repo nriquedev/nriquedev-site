@@ -1,6 +1,7 @@
 {
     "title": "Enrique - Blog notes",
     "repo": "https://github.com/nriquedev/nriquedev-site",
+    "site_moto": "Personal site notes to myself",
     "comments": false,
     "author": {
       "name": "Enrique"
