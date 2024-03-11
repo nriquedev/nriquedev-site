@@ -17,22 +17,12 @@
             ">
     {%- for sitepage in collections.pages -%}
         <a class="  nav-link 
-                    link-secondary 
-                    {% if  (page.url | lower | slug == "") and (sitepage.data.title | lower == "home") %}ep-active{% endif %}    
-                    {% if  page.url | lower | slug == sitepage.data.title | lower %}ep-active{% endif %}
+                    
+                    {% if  (page.url | lower | slug == "") and (sitepage.data.title | lower == "home") %}ep-nav-item-active{% endif %}    
+                    {% if  page.url | lower | slug == sitepage.data.title | lower %}ep-nav-item-active{% endif %}
                     " 
-
             href="{{ sitepage.url }}"> 
-            
-
-                
-                {{ sitepage.data.title }}
-                
-                
-
-                
-                </a>
-
-
+              {{ sitepage.data.title }}
+        </a>
     {%- endfor -%}
 </nav>

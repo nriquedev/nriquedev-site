@@ -6,6 +6,9 @@
 
 // 2. Include any default variable overrides here
 
+$nav-link-color: "#949494";
+$nav-link-hover-color: "#4C4C4C";
+
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../../../node_modules/bootstrap/scss/variables";
 
@@ -45,10 +48,12 @@
     border: 1px solid red;
 }
 
-.ep-active{
-  border-bottom: 1px solid red;
-
+.ep-nav-item-active{
+  //border-bottom: 1px solid #949494;
+  text-decoration: underline;
 }
+
+
 
 /***************\
 Typography
