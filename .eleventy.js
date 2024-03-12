@@ -17,7 +17,7 @@ module.exports = eleventyConfig => {
 
     //Prefix to deploy to a subdir
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
-        extensions: "html, css, png, jpeg"
+        extensions: "html, css, png, jpeg, webp"
     });
 
     return {
