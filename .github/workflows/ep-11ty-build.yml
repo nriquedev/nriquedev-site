@@ -1,0 +1,24 @@
+name: Eleventy Build
+on: 
+  push:
+    paths-ignore:
+      - README.md
+
+jobs:
+  build-deploy:
+    name: EP Eleventy Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@master
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: npm run ep-build-all
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3.9.3
+        with:
+          publish_dir: ./_site 
+          github_token: ${{ secrets.GITHUB_TOKEN }}
