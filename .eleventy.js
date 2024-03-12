@@ -1,4 +1,5 @@
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+require("dotenv").config();
 
 module.exports = eleventyConfig => {
     
@@ -14,7 +15,13 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPlugin(require('./config/custom-filters.js'));
     eleventyConfig.addPlugin(require('./config/custom-syntax-highlighting.js'));
 
+    //Prefix to deploy to a subdir
+    eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
+        extensions: "html, css, png, jpeg"
+    });
+
     return {
+        pathPrefix: process.env.DEV_ENVIRONMENT === 'true' ? "" : "/nriquedev-site/",
         dir: {
             input: 'src',
             output: '_site'

@@ -21,6 +21,7 @@
     "sass": "^1.71.1"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5"
   }
 }
