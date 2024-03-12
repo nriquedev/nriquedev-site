@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-deploy:
-    name: Eleventy Build
+    name: EP Eleventy Build
     runs-on: ubuntu-latest
     steps:
       - name: Git Checkout

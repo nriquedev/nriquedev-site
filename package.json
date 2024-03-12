@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ep-build:sass": "sass src/assets/sass:src/assets/css",
+    "ep-build:sass": "sass src/assets/sass:src/assets/css --no-source-map --style=compressed ",
     "ep-watch:sass": "sass --watch src/assets/sass:src/assets/css",
     "ep-build:eleventy": "npx eleventy --formats=html,md,jpg,jpeg,png,css,webp",
     "ep-watch:eleventy": "eleventy --serve --formats=html,md,jpg,jpeg,png,css,webp",
