@@ -45,9 +45,14 @@
                     col-md-10 
                     col-lg-9
                     ">
-          <h2 class="h1 border-bottom" >{{ title | safe }}</h2>
+          <div class="mb-6">
+            <h2 class="h1 border-bottom" >{{ title | safe }} </h2>
+            <h3 class="h6">{{ date | epDate }}</h3>
+          </div>
           
           {{ content | safe }}
+
+
         </div>
         
       </div> {# end row #}
