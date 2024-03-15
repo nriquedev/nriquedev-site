@@ -1,8 +1,8 @@
 name: EP Eleventy Build
 on: 
   push:
-    paths-ignore:
-      - README.md
+    branches:
+      - 'dev'
 
 jobs:
   build-deploy:
