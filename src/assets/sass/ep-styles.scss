@@ -69,7 +69,46 @@ Typography
 body{
   color: #323232;
   background-color: #FAFAFA;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-family: "Roboto Flex", sans-serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Inconsolata", sans-serif;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 900
+
+.inconsolata{
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 1000
+
+.roboto-flex{
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
 }
   
 
