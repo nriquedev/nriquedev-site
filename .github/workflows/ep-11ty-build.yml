@@ -1,4 +1,4 @@
-name: Eleventy Build
+name: EP Eleventy Build
 on: 
   push:
     paths-ignore:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-deploy:
-    name: EP Eleventy Build
+    name: EP Build and deploy to gh-pages
     runs-on: ubuntu-latest
     steps:
       - name: Git Checkout
