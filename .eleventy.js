@@ -10,6 +10,11 @@ module.exports = eleventyConfig => {
         ]
     });
 
+    //JSON filter stringify
+    eleventyConfig.addFilter('stringify', (data) => {
+        return JSON.stringify(data, null, 2)
+    });
+
     //Multiple config files
     eleventyConfig.addPlugin(require('./config/custom-markdown-rules.js'));
     eleventyConfig.addPlugin(require('./config/custom-filters.js'));
