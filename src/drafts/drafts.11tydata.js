@@ -24,10 +24,10 @@ module.exports = () => {
                 else {
                     console.log("filepathStem: ", data.page.filePathStem );
                     console.log("outputPath: ", data.page.filePathStem );
-                    console.log("result: ", data.page.filePathStem.replace('/drafts/', '') + '/' + '\n');
+                    console.log("result: ", data.page.filePathStem.replace('/drafts/', '/blog/') + '/' + '\n');
                     //console.log("permalink: ", data.page.filePathStem.replace('/drafts/', '') + '/');
                     //return data.page.filePathStem.replace('/drafts/', '') + '/';
-                    return data.page.filePathStem.replace('/drafts/', '') + '/';
+                    return data.page.filePathStem.replace('/drafts/', '/blog/') + '/';
                 }
             }
         }
