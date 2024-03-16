@@ -2,7 +2,7 @@
 layout: 'layouts/base.njk'
 title: 'This is the post 006'
 tags: posts
-status: draft
+draft: true
 eleventyExcludeFromCollections: true
 permalink: false
 date: 2024-01-13
