@@ -3,7 +3,7 @@ name: EP Send souurce to publish site
 on:
   push:
     branches:
-    - main
+    - dev
 jobs:
   post:
     runs-on: ubuntu-latest
