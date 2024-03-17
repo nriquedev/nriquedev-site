@@ -13,11 +13,11 @@ jobs:
         id: push_directory
         uses: cpina/github-action-push-to-another-repository@ssh-deploy-key
         env:
-          SSH_DEPLOY_KEY: ${{ secrets.WORKFLOW_DEPLOY_KEY }}
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
         with:
           source-directory: _site/
           destination-github-username: 'nriquedev'
           destination-repository-name: 'nriquedev.github.io'
           user-email: nriquedev@gmail.com
           commit-message: pushed from $GITHUB_REF
-          target-branch: master
+          target-branch: main
