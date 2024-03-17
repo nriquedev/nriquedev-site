@@ -1,9 +1,8 @@
-name: EP Send souurce to publish site
+name: EP Send source to publish site
 
 on:
-  push:
-    branches:
-    - dev
+  repository_dispatch:
+    types: [trigger-publish-to-site]
 jobs:
   post:
     runs-on: ubuntu-latest
@@ -20,4 +19,4 @@ jobs:
           destination-repository-name: 'nriquedev.github.io'
           user-email: nriquedev@gmail.com
           commit-message: pushed from $GITHUB_REF
-          target-branch: main
+          target-branch: gh-pages
