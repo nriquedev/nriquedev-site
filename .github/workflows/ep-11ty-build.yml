@@ -24,8 +24,16 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.9.3
         with:
+          deploy_key: ${{ secrets.REPO_NRIQUEDEV_PAT }}
+          external_repository: nriquedev/nriquedev.github.io
+          publish_branch: gh-pages
           publish_dir: ./_site 
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      
+      # - name: Deploy
+      # uses: peaceiris/actions-gh-pages@v3.9.3
+      # with:
+      #   publish_dir: ./_site 
+      #   github_token: ${{ secrets.GITHUB_TOKEN }}
       
       # - name: Trigger send to publish site
       #   if: success()
