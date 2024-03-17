@@ -11,14 +11,27 @@ jobs:
     steps:
       - name: Git Checkout
         uses: actions/checkout@master
+        
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
+
       - run: npm ci
+      
       - run: npm run ep-build-all
+      
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.9.3
         with:
           publish_dir: ./_site 
           github_token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Trigger send to publish site
+        if: success()
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.REPO_NRIQUEDEV_PAT }}
+          repository: ${{ github.repository }}
+          event-type: trigger-publish-to-site
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
