@@ -11,7 +11,14 @@ title: 'Blog'
                   link-opacity-75-hover
                   link-underline-opacity-25-hover
                  "
-          href="{{ post.url }}">{{ post.data.title }} 
+          href="{{ post.url }}">
+          hola
+          {{ post.permalink }}
+          {# {%- if  !permalink  -%}
+              <span class="badge rounded-pill text-bg-warning">Draft</span>
+          {%- endif -%} #}
+          
+          {{ post.data.title }} 
           <span class="fs-6">( {{ post.data.date | epDate }} ) </span>
           
         </a></br> 
