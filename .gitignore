@@ -12,7 +12,7 @@ node_modules/
 *.scss.map
 
 # Exclud _site folder
-_site
+_site__
 
 
 
