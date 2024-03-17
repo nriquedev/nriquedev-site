@@ -2,7 +2,7 @@ name: EP Eleventy Build
 on: 
   push:
     branches:
-      - 'push-different-repo'
+      - 'dev'
 
 jobs:
   build-deploy:
