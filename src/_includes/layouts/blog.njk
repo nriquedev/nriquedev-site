@@ -11,7 +11,13 @@ title: 'Blog'
                   link-opacity-75-hover
                   link-underline-opacity-25-hover
                  "
-          href="{{ post.url }}">{{ post.data.title }} 
+          href="{{ post.url }}">
+          {# {% "(draft)" if post.data.draft and not post.data.draft == "false" %}  #}
+          {%- if post.data.draft and post.data.draft == true -%}
+              <span class="badge text-bg-warning p-1 px-2 me-2 rounded fs-6">Draft</span>
+          {%- endif -%}
+          
+          {{ post.data.title }} 
           <span class="fs-6">( {{ post.data.date | epDate }} ) </span>
           
         </a></br> 
