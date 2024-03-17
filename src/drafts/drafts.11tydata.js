@@ -18,16 +18,20 @@ module.exports = () => {
             },
             permalink: (data) => {
                 if (isDevEnv == 'false') {
-                    //console.log("permalink: ======> " , !isDevEnv)
+                    //console.log("permalink: =====-=> " , !isDevEnv)
                     return false;
                 }
                 else {
                     console.log("filepathStem: ", data.page.filePathStem );
                     console.log("outputPath: ", data.page.filePathStem );
                     console.log("result: ", data.page.filePathStem.replace('/drafts/', '/blog/') + '/' + '\n');
+                    console.log("result2: ", '/blog/' + data.page.fileSlug + '/');
+
+
                     //console.log("permalink: ", data.page.filePathStem.replace('/drafts/', '') + '/');
                     //return data.page.filePathStem.replace('/drafts/', '') + '/';
-                    return data.page.filePathStem.replace('/drafts/', '/blog/') + '/';
+                    //return data.page.filePathStem.replace('/drafts/', '/blog/') + '/';
+                    return '/blog/' + data.page.fileSlug + '/';
                 }
             }
         }
