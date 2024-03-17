@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-deploy:
-    name: EP - Build and deploy to gh-pages
+    name: EP Build and deploy to gh-pages
     runs-on: ubuntu-latest
     steps:
       - name: Git Checkout
