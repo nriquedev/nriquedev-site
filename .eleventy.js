@@ -26,7 +26,7 @@ module.exports = eleventyConfig => {
     });
 
     return {
-        pathPrefix: process.env.DEV_ENVIRONMENT === 'true' ? "" : "/nriquedev-site/",
+        //pathPrefix: process.env.DEV_ENVIRONMENT === 'true' ? "" : "/nriquedev-site/",
         dir: {
             input: 'src',
             output: '_site'
