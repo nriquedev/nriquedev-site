@@ -12,11 +12,10 @@ title: 'Blog'
                   link-underline-opacity-25-hover
                  "
           href="{{ post.url }}">
-          hola
-          {{ post.permalink }}
-          {# {%- if  !permalink  -%}
-              <span class="badge rounded-pill text-bg-warning">Draft</span>
-          {%- endif -%} #}
+          {# {% "(draft)" if post.data.draft and not post.data.draft == "false" %}  #}
+          {%- if post.data.draft and post.data.draft == true -%}
+              <span class="badge text-bg-warning p-1 px-2 me-2 rounded fs-6">Draft</span>
+          {%- endif -%}
           
           {{ post.data.title }} 
           <span class="fs-6">( {{ post.data.date | epDate }} ) </span>

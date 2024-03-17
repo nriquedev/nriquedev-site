@@ -7,7 +7,7 @@ function showDraft(data) {
   const isDraft = 'draft' in data && data.draft !== false;
   const isFutureDate = data.page.date > todaysDate;
 
-  return isDevenv || (!isDraft && !isFutureDate);
+  return (isDevenv == "true") || (!isDraft && !isFutureDate);
 };
 
 module.exports = () => {
