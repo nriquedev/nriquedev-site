@@ -2,7 +2,7 @@ name: EP Eleventy Build
 on: 
   push:
     branches:
-      - 'dev'
+      - 'main'
 
 jobs:
   build-deploy:
