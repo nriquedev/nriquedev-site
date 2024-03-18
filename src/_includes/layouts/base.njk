@@ -12,7 +12,6 @@
                 mb-2
                 mb-sm-4
                 bg-light
-
                 shadow-sm
                 ">
       {% include 'partials/header.njk' %}
@@ -47,9 +46,16 @@
                     ">
           <div class="mb-6">
             <h2 class="h1 border-bottom" >{{ title | safe }} </h2>
+                          tags: 
+
 
             {%- if  tags != 'pages'  -%}
               <h3 class="h6">{{ date | epDate }}</h3>
+                
+                {%- for tag in tags -%}
+                  {{ tag }} 
+                {%- endfor -%}
+
             {%- endif -%}
           </div>
           
