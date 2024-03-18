@@ -1,26 +1,18 @@
-# 11ty Template
+# The Site
 
-This is a starter template for a simple 11ty template with support for pages and blog.
+This is a personal site where I intend to collect all the things I learn while playing with different things in the are of web development.
 
-## This template includes:
-- Partials for navigation, header and meta
-- Link to Bootstrap CDN (title-styles-and-meta.njk)
-- Basic CSS style sheet (assets/css/styles.css)
-- Static pages (src/pages)
-- Blog page (src/blog)
+## Static Site Generator Used
 
-## Installation
-Clone this repo:  
- `git clone https://github.com/nriquedev/11ty-template.git`
+This site has been built using:
+- [11ty](https://www.11ty.dev/) SSG 
+- [Nunjucks](https://mozilla.github.io/nunjucks/) template engine
+- [Github Actions](https://docs.github.com/en/actions) and [Github pages](https://pages.github.com/) to build and deploy the site
 
-cd to template dir:  
- `cd 11ty-template`
+## Worflow to build and deploy
 
-Install dependencies:  
- `npm install`
+The site is build via Github Actions in this repository. Once the site is built, a GH workflow is triggered to deploy the built site to Github Pages in a different repository (nriquedev.github.io) where the static files are stored and served.
 
-Start the site:  
- `npm start`
 
 
 
