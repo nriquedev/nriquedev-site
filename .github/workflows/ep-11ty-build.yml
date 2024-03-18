@@ -2,7 +2,7 @@ name: EP Eleventy Build
 on: 
   push:
     branches:
-      - 'dev'
+      - 'main'
 
 jobs:
   build-deploy:
@@ -27,19 +27,4 @@ jobs:
           personal_token: ${{ secrets.REPO_NRIQUEDEV_PAT }}
           external_repository: nriquedev/nriquedev.github.io
           publish_branch: gh-pages
-          publish_dir: ./_site 
-      
-      # - name: Deploy
-      # uses: peaceiris/actions-gh-pages@v3.9.3
-      # with:
-      #   publish_dir: ./_site 
-      #   github_token: ${{ secrets.GITHUB_TOKEN }}
-      
-      # - name: Trigger send to publish site
-      #   if: success()
-      #   uses: peter-evans/repository-dispatch@v1
-      #   with:
-      #     token: ${{ secrets.REPO_NRIQUEDEV_PAT }}
-      #     repository: ${{ github.repository }}
-      #     event-type: trigger-publish-to-site
-      #     client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+          publish_dir: ./_site
