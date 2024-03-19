@@ -1,7 +1,7 @@
 ---
 layout: 'layouts/base.njk'
 title: 'This is the post 002'
-tags: posts
+tags: ['posts', 'web development']
 date: 2023-01-18
 draft: false
 ---
