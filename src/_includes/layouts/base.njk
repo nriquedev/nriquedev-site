@@ -51,11 +51,7 @@
 
             {%- if  tags != 'pages'  -%}
               <h3 class="h6">{{ date | epDate }}</h3>
-                
-                {%- for tag in tags -%}
-                  {{ tag }} 
-                {%- endfor -%}
-
+              {% listTagsExcept tags, ["posts", "pages"] %}
             {%- endif -%}
           </div>
           
