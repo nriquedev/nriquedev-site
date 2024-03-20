@@ -1,0 +1,16 @@
+---
+layout: 'layouts/base.njk'
+title: 'Tags'
+---
+
+
+{# {% set taglist = collections[ tag ] %}
+{% for post in taglist | reverse %}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+{% endfor %} #}
+
+
+{% set taglist = collections[ publicTags ] %}
+{% for post in taglist | reverse %}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+{% endfor %}
