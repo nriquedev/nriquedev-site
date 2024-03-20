@@ -46,13 +46,18 @@
                     ">
           <div class="mb-6">
             <h2 class="h1 border-bottom" >{{ title | safe }} </h2>
-                          tags: 
+            tags: 
 
 
             {%- if  tags != 'pages'  -%}
               <h3 class="h6">{{ date | epDate }}</h3>
-              {% listTagsExcept tags, ["posts", "pages"] %}
+              {# {% listTagsExcept tags, ["posts", "pages"] %} #}
             {%- endif -%}
+            {# {{ publicTags }} #}
+
+            {%- for publicTag in publicTags  -%}
+              <span class="h5 badge rounded-3 text-bg-secondary mx-1 p-1"> {{ publicTag }} </span>
+            {%- endfor -%}
           </div>
           
           {{ content | safe }}

@@ -19,7 +19,7 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPlugin(require('./config/custom-markdown-rules.js'));
     eleventyConfig.addPlugin(require('./config/custom-filters.js'));
     eleventyConfig.addPlugin(require('./config/custom-syntax-highlighting.js'));
-    eleventyConfig.addPlugin(require('./config/custom-shortcode-listTags.js'));
+    //eleventyConfig.addPlugin(require('./config/custom-shortcode-listTags.js'));
 
 
     //Prefix to deploy to a subdir
