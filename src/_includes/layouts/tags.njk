@@ -1,0 +1,31 @@
+---
+layout: 'layouts/base.njk'
+title: 'Tags'
+permalink: /tags/{{ publicTag | slugify }}
+---
+    {# {%- for post in collections.posts  -%}
+        <a
+           class="
+                  link-secondary 
+                  link-offset-2 
+                  link-underline-opacity-0 
+                  link-opacity-75-hover
+                  link-underline-opacity-25-hover
+                 "
+          href="{{ post.url }}">
+          {% "(draft)" if post.data.draft and not post.data.draft == "false" %} 
+          {%- if post.data.draft and post.data.draft == true -%}
+              <span class="badge text-bg-warning p-1 px-2 me-2 rounded fs-6">Draft</span>
+          {%- endif -%}
+          
+          {{ post.data.title }} 
+          <span class="fs-6">( {{ post.data.date | epDate }} ) </span>
+          
+        </a></br> 
+  	{%- endfor -%} #}
+    test
+{% set taglist = collections[ tag ] %}
+{% for post in taglist | reverse %}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+{% endfor %}
+

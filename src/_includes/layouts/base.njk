@@ -57,6 +57,8 @@
 
             {%- for publicTag in publicTags  -%}
               <span class="h5 badge rounded-3 text-bg-secondary mx-1 p-1"> {{ publicTag }} </span>
+              <a class="h5 badge rounded-3 text-bg-secondary mx-1 p-1" href="/tags/{{publicTag | slugify }}">{{ publicTag }}</a>
+
             {%- endfor -%}
           </div>
           
