@@ -15,11 +15,8 @@ eleventyComputed:
   title: Tagged "{{ tag }}"
 permalink: /tags/{{ tag | slugify }}/
 ---
-<h1>Tagged “{{ tag }}”</h1>
-
-
-
-<p>See <a href="/tags/">all tags</a>.</p>
+<!-- <h1>Tagged “{{ tag }}”</h1>
+<p>See <a href="/tags/">all tags</a>.</p> -->
 
 
 
