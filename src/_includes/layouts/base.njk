@@ -34,14 +34,6 @@
               <h3 class="h6">{{ date | epDate }}</h3>
             {%- endif -%}
 
-            {%- for publicTag in publicTags  -%}
-              {# <span class="h5 badge rounded-3 text-bg-secondary mx-1 p-1"> {{ publicTag }} </span> #}
-              <a class="h5 badge rounded-3 text-bg-secondary mx-1 p-1" href="/tags/{{publicTag | slugify }}">{{ publicTag }}</a>
-            {%- endfor -%}
-
-            {# {%- for tag in tags  -%}
-              <a class="h5 badge rounded-3 text-bg-secondary mx-1 p-1" href="/tags/{{tag | slugify }}">{{ tag }}</a>
-            {%- endfor -%} #}
           </div>
           
           {{ content | safe }}
