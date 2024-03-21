@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 
@@ -12,45 +14,26 @@
                 mb-2
                 mb-sm-4
                 bg-light
-
                 shadow-sm
                 ">
       {% include 'partials/header.njk' %}
     </div>
-
-
-    <div class="container
-                mt-3
-                mt-md-5
-                ">
-
-
-
+    <div class="container mt-3 mt-md-5">
       <div class="row align-items-start">
-
         {# Navigation #}
-        <div class="col 
-                    col-md-2
-                    col-lg-3
-                    ep-sticky-bottom-mobile
-                    text-end
-                    ep-nav-mt
-                    ">
+        <div class="col col-md-2 col-lg-3 ep-sticky-bottom-mobile text-end ep-nav-mt">
           {% include 'partials/navigation.njk' %}
         </div>
 
         {# Content #}
-        <div class="ep-content
-                    col-12 
-                    col-md-10 
-                    col-lg-9
-                    ">
+        <div class="ep-content col-12 col-md-10 col-lg-9">
           <div class="mb-6">
             <h2 class="h1 border-bottom" >{{ title | safe }} </h2>
 
             {%- if  tags != 'pages'  -%}
               <h3 class="h6">{{ date | epDate }}</h3>
             {%- endif -%}
+
           </div>
           
           {{ content | safe }}

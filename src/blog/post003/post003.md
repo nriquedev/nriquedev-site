@@ -1,7 +1,10 @@
 ---
 layout: 'layouts/base.njk'
 title: 'This is the post 003'
-tags: posts
+tags: ['posts', 'test tag', '11ty']
+publicTags: 
+  - 'test tag'
+  - 11ty
 date: 2024-01-13
 draft: false
 ---
