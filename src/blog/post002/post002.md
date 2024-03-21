@@ -1,10 +1,10 @@
 ---
 layout: 'layouts/base.njk'
 title: 'This is the post 002'
-tags: ['posts', 'web development', 'javascript']
+tags: ['posts']
 publicTags: 
   - 'web development'
-  - javascript
+  - 'javascript'
 date: 2023-01-18
 draft: false
 ---

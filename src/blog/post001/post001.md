@@ -1,7 +1,7 @@
 ---
 layout: 'layouts/base.njk'
 title: 'This is the post 001'
-tags: ['posts', 'javascript']
+tags: ['posts']
 publicTags: 
   - javascript
 date: 2024-02-21

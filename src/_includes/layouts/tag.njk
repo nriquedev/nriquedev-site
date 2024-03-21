@@ -1,4 +1,8 @@
 ---
+layout: layouts/base.njk
+permalink: /tags/{{ publicTags | slugify }}/
+---
+{# ---
 pagination:
   data: collections
   size: 1
@@ -13,24 +17,25 @@ layout: layouts/base.njk
 eleventyComputed:
   title: Tagged “{{ tag }}”
 permalink: /tags/{{ tag | slugify }}/
----
-{% set postslist = collections[ tag ] %}
+--- #}
+
+
+
+
+{% set postslist = collections[ publicTags ] %}
+
+
+
+
 {%- for post in postslist  -%}
     <a
-        class="
-              link-secondary 
-              link-offset-2 
-              link-underline-opacity-0 
-              link-opacity-75-hover
-              link-underline-opacity-25-hover
-              "
+      class="link-secondary link-offset-2 link-underline-opacity-0 link-opacity-75-hover link-underline-opacity-25-hover"
       href="{{ post.url }}">
       {%- if post.data.draft and post.data.draft == true -%}
           <span class="badge text-bg-warning p-1 px-2 me-2 rounded fs-6">Draft</span>
       {%- endif -%}
       
-      {{ post.data.title }} -------
-      <span class="fs-6">( {{ post.data.date | epDate }} ) </span>
+      {{ post.data.title }} <span class="fs-6">( {{ post.data.date | epDate }} ) </span>
       
     </a></br> 
 {%- endfor -%}

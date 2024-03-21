@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 
@@ -16,50 +18,30 @@
                 ">
       {% include 'partials/header.njk' %}
     </div>
-
-
-    <div class="container
-                mt-3
-                mt-md-5
-                ">
-
-
-
+    <div class="container mt-3 mt-md-5">
       <div class="row align-items-start">
-
         {# Navigation #}
-        <div class="col 
-                    col-md-2
-                    col-lg-3
-                    ep-sticky-bottom-mobile
-                    text-end
-                    ep-nav-mt
-                    ">
+        <div class="col col-md-2 col-lg-3 ep-sticky-bottom-mobile text-end ep-nav-mt">
           {% include 'partials/navigation.njk' %}
         </div>
 
         {# Content #}
-        <div class="ep-content
-                    col-12 
-                    col-md-10 
-                    col-lg-9
-                    ">
+        <div class="ep-content col-12 col-md-10 col-lg-9">
           <div class="mb-6">
             <h2 class="h1 border-bottom" >{{ title | safe }} </h2>
-            tags: 
-
 
             {%- if  tags != 'pages'  -%}
               <h3 class="h6">{{ date | epDate }}</h3>
-              {# {% listTagsExcept tags, ["posts", "pages"] %} #}
             {%- endif -%}
-            {# {{ publicTags }} #}
 
             {%- for publicTag in publicTags  -%}
-              <span class="h5 badge rounded-3 text-bg-secondary mx-1 p-1"> {{ publicTag }} </span>
+              {# <span class="h5 badge rounded-3 text-bg-secondary mx-1 p-1"> {{ publicTag }} </span> #}
               <a class="h5 badge rounded-3 text-bg-secondary mx-1 p-1" href="/tags/{{publicTag | slugify }}">{{ publicTag }}</a>
-
             {%- endfor -%}
+
+            {# {%- for tag in tags  -%}
+              <a class="h5 badge rounded-3 text-bg-secondary mx-1 p-1" href="/tags/{{tag | slugify }}">{{ tag }}</a>
+            {%- endfor -%} #}
           </div>
           
           {{ content | safe }}
