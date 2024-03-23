@@ -26,14 +26,17 @@
         </div>
 
         {# Content #}
+
+
         <div class="ep-content col-12 col-md-10 col-lg-9">
           <div class="mb-6">
             <h2 class="h1 border-bottom" >{{ title | safe }} </h2>
-
-            {%- if  tags == 'posts'  -%}
+            {% set tagsvar = tags %}
+            {%- if  'posts' in tags  -%}
               <h3 class="h6">{{ date | epDate }}</h3>
               {%- for publicTag in publicTags  -%}
-                <span class="badge rounded text-bg-secondary px-2 me-2"> {{ publicTag }}  </span>
+                {%- set publicTagUrl %}/tags/{{ publicTag | slugify }}/{% endset %}
+                URL {{ publicTagUrl }}  <span class="badge rounded text-bg-secondary px-2 me-2"> {{ publicTag }}  </span>
               {%- endfor  -%}
             {%- endif -%}
 
