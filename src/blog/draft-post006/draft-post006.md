@@ -1,7 +1,7 @@
 ---
 layout: 'layouts/base.njk'
 title: 'This is the post 006'
-tags: ['posts', 'wordpress']
+tags: ['posts']
 publicTags: 
   - wordpress
 date: 2150-12-31
