@@ -17,8 +17,6 @@ eleventyComputed:
 
 {% set postslist = collections[ tag ] %}
 
-the tag is: {{tag | slugify }}
-
 <ol>
 {% for post in postslist %}
 	<li >
