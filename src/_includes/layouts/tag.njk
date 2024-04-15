@@ -10,15 +10,17 @@ pagination:
 
 layout: 'layouts/base.njk'
 permalink: /tags/{{ tag | slugify }}/
+tags: "pages"
+eleventyComputed:
+  title: 'Posts with tag: {{ tag | slugify }}' 
 ---
 
 {% set postslist = collections[ tag ] %}
 
+the tag is: {{tag | slugify }}
 
-
-<ol >
+<ol>
 {% for post in postslist %}
-    {{ post }}
 	<li >
 		<a href="{{ post.url }}">{{ post.data.title }} </a>
 	</li>
