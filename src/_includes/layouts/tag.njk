@@ -10,19 +10,27 @@ pagination:
 
 layout: 'layouts/base.njk'
 permalink: /tags/{{ tag | slugify }}/
+tags: "pages"
+eleventyComputed:
+  title: 'Posts with tag: {{ tag | slugify }}' 
 ---
 
 {% set postslist = collections[ tag ] %}
 
-
-
-<ol >
 {% for post in postslist %}
-    {{ post }}
-	<li >
-		<a href="{{ post.url }}">{{ post.data.title }} </a>
-	</li>
-{% endfor %}
-</ol>
+  <a
+    class="
+          link-secondary 
+          link-offset-2 
+          link-underline-opacity-0 
+          link-opacity-75-hover
+          link-underline-opacity-25-hover
+          "
+    href="{{ post.url }}">
+      {{ post.data.title }} 
+      <span class="fs-6">( {{ post.data.date | epDate }} ) </span>
+   </a>
+   </br> 
+{%- endfor -%}
 
 
