@@ -32,12 +32,14 @@
           <div class="mb-6">
             <h2 class="h1 border-bottom" >{{ title | safe }} </h2>
             {% set tagsvar = tags %}
+              {% if tags != 'pages' %}
               <h3 class="h6">{{ date | epDate }}</h3>
+              {% endif %}
               {%- for publicTag in publicTags  -%}
                 {%- set publicTagUrl %}/tags/{{ publicTag | slugify }}/{% endset %}
                 <a href="/tags/{{ publicTag | slugify }}" class="link-secondary " > 
                   <span class="badge rounded text-bg-secondary px-2 me-2"> {{ publicTag }}  </span>
-                </a>{%- if not loop.last %}, {% endif %}
+                </a>
               {%- endfor  -%}
           </div>
           
