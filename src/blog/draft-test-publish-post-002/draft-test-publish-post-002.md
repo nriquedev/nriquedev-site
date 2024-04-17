@@ -1,6 +1,6 @@
 ---
 layout: 'layouts/base.njk'
-title: 'This is the post 006'
+title: 'Test publishing 002'
 tags: 
   - posts
   - wordpress
