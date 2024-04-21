@@ -1,11 +1,10 @@
 ---
 layout: 'layouts/base.njk'
-title: 'This is the post 006'
+title: 'Workflow to publish an article in 11ty using GH pages'
 tags: 
   - posts
-  - wordpress
 publicTags: 
-  - wordpress
+  - 11ty
 date: 2150-12-31
 draft: true
 ---
