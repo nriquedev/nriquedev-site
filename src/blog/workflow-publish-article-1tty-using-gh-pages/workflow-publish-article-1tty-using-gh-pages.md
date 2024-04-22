@@ -55,4 +55,4 @@ At this point the article is ready to be published. I will do a Pull Request to 
 
 The last step will be to merge the 'posts' branch with the 'main' branch so the artivle can be published. A Pull Request done to the 'main' branch will have the article published to the site. 
 
-One of the advantages of keeping this 'posts' branch and individual branches for each draft is that I can schedule Pull Request to be done periodically (i.e. each Friday). Everything in the 'posts' branch will be published after the merge is done.
+One of the advantages of keeping this 'posts' branch and individual branches for each draft is that I can schedule Pull Requests to be done periodically (i.e. each Friday). Everything in the 'posts' branch will be published after the merge is done.
