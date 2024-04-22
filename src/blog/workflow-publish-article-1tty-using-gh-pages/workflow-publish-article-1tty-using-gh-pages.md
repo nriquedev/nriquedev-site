@@ -5,7 +5,7 @@ tags:
   - posts
 publicTags: 
   - 11ty
-date: 2150-04-22
+date: 2024-04-22
 draft: true
 ---
 In this article I will explain the worflow I used to publish a post in this site. This will go from creating the draft, reviewing the content, set it ready to publish and finally deploy it to Github pages. The general process is to maintain a branch dedicated to posts and have them there until they are published, this is to merge this posts-drafts branch to the main which will make the post to appear in the live site. 
