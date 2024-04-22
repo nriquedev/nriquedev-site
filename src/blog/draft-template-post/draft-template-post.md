@@ -1,11 +1,10 @@
 ---
 layout: 'layouts/base.njk'
-title: 'This is the post 006'
+title: 'This is a draft template post'
 tags: 
   - posts
-  - wordpress
 publicTags: 
-  - wordpress
+  - anytag
 date: 2150-12-31
 draft: true
 ---
